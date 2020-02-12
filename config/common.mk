@@ -206,6 +206,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/xtended/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
+# Audio
+include vendor/xtended/config/audio.mk
+
 # Fonts
 include vendor/xtended/config/fonts.mk
 
