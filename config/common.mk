@@ -206,6 +206,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/xtended/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
+# Fonts
+include vendor/xtended/config/fonts.mk
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/xtended/config/partner_gms.mk
 -include packages/apps/Plugins/plugins.mk
