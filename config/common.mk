@@ -203,8 +203,14 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_PACKAGES += \
     QuickAccessWallet
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/xtended/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
+# Overlays
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    vendor/xtended/overlay \
+    vendor/xtended/overlay-pixel \
+
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/xtended/overlay/common \
+    vendor/xtended/overlay-pixel/common
 
 # Audio
 include vendor/xtended/config/audio.mk
