@@ -212,6 +212,9 @@ include vendor/xtended/config/audio.mk
 # Fonts
 include vendor/xtended/config/fonts.mk
 
+# CarrierSettings
+include vendor/xtended/CarrierSettings/config.mk
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/xtended/config/partner_gms.mk
 -include packages/apps/Plugins/plugins.mk
